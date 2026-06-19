@@ -1,0 +1,300 @@
+\documentclass[11pt,a4paper]{scrartcl}
+
+% ----------------------------------------------------------------------
+% Encoding, fonts, language
+% ----------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ----------------------------------------------------------------------
+% Colors and appearance (aligned with your Beamer template)
+% ----------------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{econblue}{RGB}{0,70,140}
+\definecolor{econlight}{RGB}{230,240,255}
+
+\usepackage{sectsty}
+\allsectionsfont{\color{econblue}}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\theauthor}
+\fancyhead[C]{Climate and Human Behavior – Report}
+\fancyhead[R]{\shorttitle}
+\fancyfoot[C]{\thepage}
+
+% ----------------------------------------------------------------------
+% Mathematics (as in the presentation)
+% ----------------------------------------------------------------------
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{bm}
+\usepackage{physics}
+
+\numberwithin{equation}{section}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% ----------------------------------------------------------------------
+% Figures and tables
+% ----------------------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{{Figures/}{Figures and Tables/}{plots/}}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{siunitx}
+\sisetup{
+  detect-all,
+  round-mode=places,
+  round-precision=2
+}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% ----------------------------------------------------------------------
+% Bibliography, hyperlinks, references
+% ----------------------------------------------------------------------
+\usepackage[  backend=biber,
+  style=authoryear,
+  sorting=nty,
+  maxcitenames=2,
+  maxbibnames=10
+]{biblatex}
+
+% Adjust this to your .bib file name:
+\addbibresource{references.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=econblue,
+  urlcolor=econblue,
+  citecolor=econblue
+}
+\usepackage{cleveref}
+
+% ----------------------------------------------------------------------
+% Key message box (analogous to alert block in Beamer)
+% ----------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\tcbset{
+  colframe=econblue,
+  colback=econlight,
+  coltitle=white,
+  fonttitle=\bfseries,
+}
+\newenvironment{keymessage}[1][Key Message]{%
+  \begin{tcolorbox}[title=#1]%
+}{%
+  \end{tcolorbox}%
+}
+
+% ----------------------------------------------------------------------
+% Metadata – adapt per report
+% ----------------------------------------------------------------------
+\newcommand{\shorttitle}{Behavioural Research in Climate Policy} % header
+
+\title{Behavioural Research in Climate Policy:\\
+A Report on \emph{[Insert Focal Paper Title Here]}}
+\author{Theo Osterhaus (Matriculation No.\ 7443693)\\
+Faculty of Management, Economics and Social Sciences\\
+University of Cologne}
+\date{Seminar: Climate and Human Behavior (Spring 2026)\\
+Instructor: Rastislav Reh\'ak}
+
+% ======================================================================
+%   Document
+% ======================================================================
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report is written for the seminar ``Climate and Human Behaviour at the University of Cologne. It addresses the topic of behavioural research in climate policy, using the assigned focal paper as a starting point and anchor. The report summarises the main research question, methods, and findings of the focal paper, situates it within the broader course themes and literature on behavioural climate policy, and discusses its policy relevance and regulatory context. The total length of the report does not exceed 2500 words (excluding the bibliography), in line with the course requirements.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ----------------------------------------------------------------------
+% 1. Introduction and Motivation
+% ----------------------------------------------------------------------
+\section{Introduction and Motivation}
+
+Protecting the climate and fostering sustainable behaviour is one of the greatest challenges societies are currently facing. In order to design effective environmental policies and international agreements, policymakers need a sound understanding of human behaviour, including beliefs, attitudes, motivations, and social interaction. Behavioural research in climate policy combines insights from behavioural economics and psychology with climate economics and political science to analyse how individuals and institutions respond to climate-related incentives, information, and norms.
+
+The purpose of this report is to analyse and critically assess one specific contribution to this literature, namely the focal paper assigned in the seminar \emph{Climate and Human Behavior}. The assigned paper serves as an anchor for the discussion, which is broadened to include related work on behavioural climate policy, as well as institutional and regulatory developments in the relevant policy domain. The main emphasis lies on understanding the central behavioural mechanisms studied in the focal paper and on evaluating the extent to which these mechanisms can be harnessed in real-world climate policy.
+
+The structure of the report follows the guidance provided in the course syllabus. The first part offers a concise summary of the focal paper, including its motivation, research question, methods, and key results. The second part positions the paper within the course themes and the academic literature on behavioural climate policy. The third and longest part discusses the policy relevance and regulatory context of the behavioural mechanisms studied in the paper, including an assessment of implementation prospects, institutional constraints, and potential complementarities with existing policy instruments.
+
+% ----------------------------------------------------------------------
+% 2. Summary of the Focal Paper
+% ----------------------------------------------------------------------
+\section{Summary of the Focal Paper}
+
+\subsection{Motivation and Research Question}
+
+In this section, you should provide a clear and concise account of what motivates the focal paper and which research question it seeks to answer. Explain what aspect of climate-related behaviour the authors focus on, why this aspect is important for climate mitigation or adaptation, and how it relates to the broader discussion of behavioural climate policy. Make explicit whether the paper addresses individual behaviour, collective decision-making, public support for policy instruments, or some other dimension of climate-relevant behaviour.
+
+Clearly formulate the main research question of the paper, ideally in one or two sentences. For example, the paper may ask whether social norm information can increase support for carbon pricing, whether moral framing affects willingness to make climate-friendly choices, or whether certain behavioural biases impede efficient climate negotiations. The research question should be precise enough to be empirically testable and analytically meaningful.
+
+\subsection{Methods and Identification Strategy}
+
+Describe the empirical or theoretical methods used in the focal paper. If the paper is empirical, discuss the research design, such as randomised controlled trials, field experiments, survey experiments, lab experiments, or quasi-experimental methods. Explain the identification strategy and the main outcome variables of interest. If the paper is theoretical, clarify the modelling framework, the behavioural assumptions, and the equilibrium concept used.
+
+Avoid reproducing every technical detail; instead, focus on the key elements that are necessary to understand how the authors answer their research question. Highlight any important features of the design that relate to behavioural mechanisms, such as the provision of norm information, framing manipulations, default options, or incentive schemes. If the paper uses a structural model or formal bargaining game, summarise the essential structure and any critical assumptions.
+
+\subsection{Main Results and Conclusions}
+
+Summarise the main empirical findings or theoretical results of the focal paper. Explain how the results answer the research question and what the authors conclude about the behavioural mechanisms under investigation. If possible, quantify the magnitude of key effects and indicate their statistical or theoretical significance.
+
+Discuss any heterogeneity the authors explore, for example across socio-demographic groups, political identities, or baseline beliefs. Highlight any surprising or counterintuitive findings that are particularly relevant for the design of climate policy. Finally, briefly state the conclusions the authors draw and how they interpret the implications of their results for behavioural climate policy.
+
+% ----------------------------------------------------------------------
+% 3. Positioning within Course Themes and Literature
+% ----------------------------------------------------------------------
+\section{Positioning within Course Themes and Literature}
+
+\subsection{Central Behavioural Mechanisms}
+
+Identify the central behavioural mechanism or mechanisms studied in the focal paper. Examples include social norms, bounded rationality, present bias, loss aversion, fairness concerns, moral identity, motivated reasoning, or identity-based polarisation. Clearly explain how these mechanisms are defined in the paper and how they are operationalised empirically or theoretically.
+
+Relate these mechanisms to concepts discussed in the seminar, especially in the introductory lectures and in other students' presentations. Explain whether the focal paper reinforces, refines, or challenges commonly held views about the role of these mechanisms in climate-related behaviour. If relevant, relate the mechanism to broader frameworks such as the BUCkET model of core social goals or other integrative theories of motivation in climate behaviour.
+
+\subsection{Relation to Behavioural Climate Policy Literature}
+
+Situate the focal paper within the wider academic literature on behavioural climate policy. Identify a few closely related studies and explain how the focal paper complements or extends them. For instance, you may discuss whether the paper builds on earlier work on social norm interventions, carbon pricing acceptance, climate nudges, or bargaining in climate negotiations.
+
+Discuss whether the focal paper primarily contributes new empirical evidence, a novel theoretical perspective, a methodological innovation, or a combination of these. Explain what gap in the literature the paper fills and why this gap is important. If the paper challenges an established result or introduces a new behavioural mechanism into the climate policy discourse, make this explicit and discuss the implications.
+
+% ----------------------------------------------------------------------
+% 4. Policy Relevance and Regulatory Context
+% ----------------------------------------------------------------------
+\section{Policy Relevance and Regulatory Context}
+
+\subsection{Policy Domain and Current Landscape}
+
+Rolle von Verhaltensökonomie in der Klimapolitik
+
+Soziale Normen als eigenständiger Policy‑Hebel neben CO‑Preis, Regulierung und Subventionen.
+„Behavioral market failure“ durch systematische Fehleinschätzung gesellschaftlicher Mehrheiten.
+
+
+Zentrale Policy‑Implikation des Papers / briq‑Monitors
+
+Klimaschutz und Pro‑Klimanormen sind in der Bevölkerung deutlich stärker verbreitet als wahrgenommen (pluralistische Ignoranz) 
+Korrektur dieser Fehleinschätzungen steigert Klimaspenden und Klimaschutzbereitschaft kausal, besonders bei Skeptiker:innen.
+
+
+Verknüpfung mit bestehenden Regulierungsinstrumenten
+
+Norminformation als Flankierung von:
+CO₂‑Bepreisung und Emissionshandel (Akzeptanz, perceived fairness),
+Ordnungsrecht (z.B. Gebäudestandards, Verbote),
+Förderprogrammen (z.B. Wärmepumpe, E‑Mobilität).
+
+
+Nutzung von Normkommunikation, um „license to regulate“ und politische Mehrheiten zu stärken.
+
+
+Konkrete Einsatzfelder für Normbasierte Kommunikation
+
+Nationale Informationskampagnen, die tatsächliche Mehrheiten sichtbar machen („die meisten in Deutschland tun / befürworten X“)
+Kommunale Programme (Energieberatung, ÖPNV, Mülltrennung) mit lokalen Normbotschaften („in unserer Stadt…“).  
+Integration in Standard‑Kommunikation von Ministerien, Behörden, Energieversorgern.
+
+
+Regulatorischer Kontext / Governance
+
+Normbasierte Interventionen als „low‑cost“ Ergänzung zu formellen Regeln und Marktinstrumenten, im Sinne moderner Regulatory Policy (Information als regulatives Instrument).3 4   
+Einbettung in nationale Klimaschutzgesetze und Strategien (z.B. Kommunikations‑ und Bildungsbausteine in Klimaschutzplänen).
+
+
+Zielgruppen‑Orientierung
+
+Besonderes Potenzial bei Gruppen mit hoher Skepsis und geringer intrinsischer Klimaschutzbereitschaft; diese reagieren messbar auf soziale Norminformationen.
+Differenzierte Ansprache je nach politischer Orientierung, Alter, Bildung etc. (Heterogenität der Effekte).
+
+
+Risiken und Grenzen aus Policy‑Perspektive
+
+Gefahr kontraproduktiver Botschaften, wenn „falsche“ deskriptive Normen kommuniziert werden („viele tun noch nichts“).  
+Notwendigkeit evidenzbasierter, transparenter Kommunikation → keine manipulative „Nudging“-Strategie, sondern Korrektur realer Fehleinschätzungen.[ECONtribute_PB_036_2022.pdf]  
+Unsicherheit über Langfristigkeit der Effekte (Spenden im Experiment vs. dauerhaftes Konsum‑ und Wahlverhalten).
+
+
+Forschungs- und Umsetzungsagenda
+
+Bedarf an Feldexperimenten in „echter“ Policy‑Umgebung (z.B. kommunale Kampagnen, nationale Initiativen).  
+Kooperation von Wissenschaft, Ministerien und NGOs zur Erhebung repräsentativer Normdaten und zur Evaluation von Norm‑Kampagnen.
+
+
+Identify the main policy domain to which the focal paper speaks. Examples include carbon pricing, emissions trading systems, renewable energy support schemes, social norm campaigns, information disclosure policies, climate nudges in consumption or transport, or the design of international climate agreements. Clearly describe how the behavioural mechanism studied in the paper is relevant for this domain.
+
+Describe the current policy or regulatory landscape in the relevant domain, focusing on one or more jurisdictions that are particularly pertinent, such as the European Union, Germany, or other countries. For example, if the focal paper concerns carbon pricing, you might summarise the status of carbon taxes, emissions trading systems, and associated revenue recycling schemes in these jurisdictions. If the paper addresses social norm interventions, describe existing campaigns or programmes that rely on social comparison or norm feedback.
+
+\begin{itemize}
+  \item Collective action problem and externalities in climate change; individual behavior below the socially optimal level.
+  \item Behavioral economics highlights additional drivers of this gap: present bias, limited attention, status quo bias, and the power of social norms.
+  \item Social norms and reciprocity strongly shape climate-relevant behavior; people are more willing to act when they believe others also contribute.
+  \item Traditional climate policy tools (carbon pricing, regulation, subsidies) remain central but can be complemented by behavioral instruments.
+  \item Behavioral tools include nudges (e.g., green energy defaults), framing of information, and targeted social norm communication.
+  \item Misperceptions of prevailing norms (pluralistic ignorance) can constitute a behavioral market failure that dampens climate action.
+  \item Providing truthful information about what others do and approve of is a low-cost, scalable intervention to correct these misperceptions.
+  \item Norm-based information interventions can increase individual climate-friendly behavior and support for climate policies.
+  \item Such interventions fit into the broader regulatory context as complements, not substitutes, to strong price signals and formal rules.
+  \item Ethical governance requires transparency and accuracy; the goal is correcting false beliefs, not secretly manipulating preferences.
+\end{itemize}
+
+
+\subsection{Implementation Status and Practical Feasibility}
+
+Assess whether the approach studied in the focal paper is already implemented in some form, is under active discussion in policy circles, or is largely unrealised in practice. Draw on policy documents, reports, or other evidence where appropriate, and provide specific examples of implementations or proposals. Discuss any institutional, political, or ethical constraints that may affect the feasibility of applying the behavioural mechanism in real-world policy.
+
+Reflect on the scalability and cost-effectiveness of the approach. For example, norm-based information campaigns may be relatively low-cost and scalable, but their effectiveness may depend on local social context and baseline beliefs. Behaviourally informed reforms of carbon pricing may face political economy constraints even if they are efficient in principle. Use these considerations to assess the practical value of the insights provided by the focal paper.
+
+\subsection{Complementarity with Existing Instruments}
+
+Discuss how the behavioural approach studied in the focal paper complements, challenges, or refines existing climate policy instruments. Consider whether the mechanism can be combined with traditional tools such as carbon pricing, regulation, subsidies, or information campaigns to enhance their effectiveness or public acceptability. Alternatively, discuss whether the mechanism suggests a rethinking of existing instruments or highlights new trade-offs.
+
+If relevant, relate the focal paper to broader strategies in behavioural climate policy, such as the use of framing to increase support for carbon pricing, the deployment of climate nudges to facilitate pro-environmental choices, or the design of institutions that account for bounded rationality and social preferences. Reflect on how policymakers could integrate the specific insights from the paper into a coherent policy mix.
+
+\subsection{Critical Assessment and Future Research}
+
+Provide your own critical assessment of the focal paper, focusing on its strengths and limitations from a policy perspective. Consider issues such as external validity, robustness of results, representativeness of the sample, and the realism of the behavioural assumptions. Reflect on whether the experimental or theoretical setting captures key features of real-world climate policy contexts.
+
+Suggest directions for future research that would help to address remaining uncertainties or to extend the insights of the focal paper. This may include studying different populations, exploring additional behavioural mechanisms, testing the intervention in different institutional settings, or combining the approach with other policy instruments. Emphasise how such research could contribute to more effective and politically feasible climate policy.
+
+\begin{keymessage}[Policy Implications]
+Summarise here, in a few sentences, your main conclusion about the policy relevance of the behavioural mechanism studied in the focal paper. Highlight what policymakers should learn from this research and under which conditions its recommendations are most applicable.
+\end{keymessage}
+
+% ----------------------------------------------------------------------
+% 5. Conclusion
+% ----------------------------------------------------------------------
+\section{Conclusion}
+
+In the concluding section, briefly recapitulate the main insights from your report. Restate the central contribution of the focal paper to behavioural research in climate policy and summarise how you have positioned it within the broader literature and course themes. Highlight the most important aspects of the policy and regulatory context that condition the practical relevance of the paper's findings.
+
+Emphasise the key behavioural mechanism or mechanisms that emerge as particularly important for climate policy design, and reflect on the overarching lesson this holds for the integration of behavioural insights into climate governance. Finally, briefly state how your assessment of the focal paper has shaped your own understanding of the opportunities and limits of behavioural approaches in addressing climate change.
+
+% ----------------------------------------------------------------------
+% References
+% ----------------------------------------------------------------------
+\printbibliography
+
+\end{document}
