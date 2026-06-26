@@ -2,7 +2,7 @@
 
 This repository contains the LaTeX source code and resources for my seminar report on the paper *"Misperceived Social Norms and Willingness to Act Against Climate Change"* (Andre et al., 2024). 
 
-The report is written as part of the seminar **Climate and Human Behavior** (Spring 2026) at the University of Cologne.
+The report is written as part of the seminar **Climate and Human Behaviour** (Spring 2026) at the University of Cologne.
 
 ## Project Details
 - **Author:** Theo Osterhaus
